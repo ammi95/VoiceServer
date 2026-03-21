@@ -60,6 +60,7 @@ nav a {
     color: white;
     cursor: pointer;
     border-radius: 6px;
+    white-space: nowrap;
 }
 
 .btn-outline {
@@ -69,6 +70,32 @@ nav a {
     color: white;
     cursor: pointer;
     border-radius: 6px;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin: 5px 10px 5px 0;
+        font-size: 14px;
+    }
+
+    .nav-btns {
+        margin-top: 10px;
+    }
+
 }
 
 /* Hero */
@@ -76,15 +103,15 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 60px;
+    padding: 50px;
     background: linear-gradient(to right, #121214, #4E4D52);
-    gap: 40px;
-    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 30px;
 }
 
 /* Left Content */
 .hero-content {
-    max-width: 500px;
+    max-width: 50%;
 }
 
 .hero h1 {
@@ -121,29 +148,24 @@ nav a {
 
 .hero-visual {
     position: relative;
+    width: 50%;
 }
 
 /* Main dashboard */
 .main-dashboard {
-    width: 520px;
+    width: 100%;
     border-radius: 15px;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
 }
 
 
 /* Responsive */
-@media(max-width: 900px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .main-dashboard {
+@media (max-width: 767px) {
+    .hero-buttons {
+        margin-bottom: 20px;
+        display: flex;
         width: 100%;
-    }
-
-    .floating-card {
-        display: none;
+        justify-content: space-between;
     }
 }
 
@@ -573,6 +595,7 @@ nav a {
     transform: scale(1.05);
     box-shadow: 0 10px 30px rgba(32, 32, 32, 0.6);
 }
+
 .footer {
     background: #EB9F3E;
     padding: 60px 40px 20px;
@@ -635,15 +658,18 @@ nav a {
 
 /* Brand colors on hover */
 .socials a:nth-child(1):hover {
-    background: #1877f2; /* Facebook */
+    background: #1877f2;
+    /* Facebook */
 }
 
 .socials a:nth-child(2):hover {
-    background: #1da1f2; /* Twitter */
+    background: #1da1f2;
+    /* Twitter */
 }
 
 .socials a:nth-child(3):hover {
-    background: #0077b5; /* LinkedIn */
+    background: #0077b5;
+    /* LinkedIn */
 }
 
 /* Bottom */
@@ -662,12 +688,14 @@ nav a {
     padding: 50px 20px;
     margin-top: 50px;
 }
+
 .pricing-section h1 {
-   color: #121214;
-   margin-bottom: 10px;
+    color: #121214;
+    margin-bottom: 10px;
 }
+
 .pricing-section p {
-  color: #363637;
+    color: #363637;
 }
 
 /* Toggle */
@@ -678,10 +706,12 @@ nav a {
     align-items: center;
     gap: 10px;
 }
-.pricing-toggle .slider{
-   left: 0;
+
+.pricing-toggle .slider {
+    left: 0;
 }
-.pricing-toggle span{
+
+.pricing-toggle span {
     color: #121214;
 }
 
@@ -718,7 +748,7 @@ nav a {
     transition: 0.3s;
 }
 
-input:checked + .slider::before {
+input:checked+.slider::before {
     transform: translateX(24px);
 }
 
@@ -736,16 +766,17 @@ input:checked + .slider::before {
     padding: 30px;
     border-radius: 15px;
     transition: 0.4s;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
-.pricing-card p{
+
+.pricing-card p {
     color: #ffffff;
 }
 
 /* Hover */
 .pricing-card:hover {
     transform: translateY(-12px) scale(1.02);
-    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
 }
 
 /* Popular */
@@ -790,7 +821,7 @@ input:checked + .slider::before {
     padding: 50px;
     gap: 30px;
     align-items: center;
-    
+
 }
 
 .contact-image {
@@ -828,7 +859,8 @@ input:checked + .slider::before {
 .contact-form button {
     padding: 12px;
     background: #EB9F3E;
-    color: #121214;;
+    color: #121214;
+    ;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -847,7 +879,7 @@ input:checked + .slider::before {
 .info-card {
     background: #EB9F3E;
     padding: 20px;
-    
+
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -869,6 +901,7 @@ input:checked + .slider::before {
 .map {
     line-height: 0;
 }
+
 .map iframe {
     width: 100%;
     height: 300px;
@@ -880,6 +913,7 @@ input:checked + .slider::before {
     font-size: 14px !important;
     min-height: 20px;
 }
+
 .success {
     color: #22c55e;
     font-weight: bold;
