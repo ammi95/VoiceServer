@@ -18,6 +18,7 @@
     color: white;
     animation: fadeIn 0.6s ease;
     margin: 30px;
+    height: 400px;
 }
 
 .login-card p {
@@ -61,7 +62,7 @@
 button {
     width: 100%;
     padding: 12px;
-    background: #EB9F3E;
+    background: #2E2952;
     border: none;
     border-radius: 6px;
     color: white;
@@ -70,7 +71,7 @@ button {
 }
 
 button:hover {
-    background: #EB9F3E;
+    background: #2E2952;
 }
 
 /* ERROR */
@@ -127,7 +128,7 @@ button:hover {
 }
 
 .signup-text a {
-    color: #EB9F3E;
+    color: #2E2952;
     text-decoration: none;
     font-weight: 600;
 }
@@ -140,7 +141,7 @@ button:hover {
 /* BUTTON */
 .demo-btn {
     padding: 12px 22px;
-    background: #EB9F3E;
+    background: #2E2952;
     color: #000000;
     border: none;
     border-radius: 8px;
@@ -201,7 +202,7 @@ button:hover {
 
 .modal-content button {
     padding: 12px;
-    background: #EB9F3E;
+    background: #2E2952;
     border: none;
     border-radius: 6px;
     color: white;
@@ -217,7 +218,7 @@ button:hover {
 
 /* SUCCESS */
 .success {
-    color: #EB9F3E;
+    color: #2E2952;
     font-weight: bold;
 }
 
@@ -275,7 +276,7 @@ button:hover {
     backdrop-filter: blur(15px);
     padding: 20px 40px;
     border-radius: 16px;
-    width: 320px;
+    width: 400px;
     color: white;
     text-align: center;
     margin: 30px;
@@ -330,7 +331,7 @@ button:hover {
 button {
     width: 100%;
     padding: 12px;
-    background: #EB9F3E;
+    background: #2E2952;
     border: none;
     border-radius: 6px;
     color: white;
@@ -339,7 +340,7 @@ button {
 }
 
 button:hover {
-    background: #EB9F3E;
+    background: #2E2952;
 }
 
 /* ERROR */
@@ -358,9 +359,10 @@ button:hover {
 }
 
 .login-text a {
-    color: #EB9F3E;
+    color: #6c63ff;
     text-decoration: none;
     font-size: 14px;
+    font-weight: 600;
 }
 
 /* ANIMATION */
