@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FieldForce</title>
+  <title>VoiceServe </title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/auth.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -17,19 +17,18 @@
     <div class="container">
 
       <!-- Logo -->
-      <div class="logo"><a href="/"><img src="assets/images/logo.png" alt=""></a></div>
+      <div class="logo"><a href="/"><img src="assets/images/logo.png" alt="" style="width: 200px;"></a></div>
 
       <!-- Menu -->
       <nav class="nav-links" id="navLinks">
         <a href="/">Home</a>
         <a href="#features">Features</a>
-        <a href="/#dashboard">Dashboard</a>
-        <a href="pricing.html">Pricing</a>
+        <a href="#usecase">Use Cases</a>
         <a href="contact.html">Contact</a>
 
         <div class="mobile-cta">
           <button class="btn-outline">Login</button>
-          <a href="javascript:void(0)" class="btn-primary" onclick="openModal()">Get Demo</a>
+          <a href="javascript:void(0)" class="btn-primary" onclick="openModal()">Try Demo</a>
         </div>
       </nav>
 
@@ -48,332 +47,266 @@
   </header>
   <!-- Hero -->
   <section class="hero">
-    <div class="container hero-container">
+    <div class="hero-container">
 
       <!-- Left Content -->
       <div class="hero-content">
-        <h1>
-          Mobile-first task management for field technicians & on-site teams
+        <h1>Smart Voice Assistant <br />
+          <span>for Utility Services</span>
         </h1>
 
         <p>
-          Replace paper workflows with real-time task tracking, GPS monitoring,
-          and smart reporting — all in one platform.
+          Voice assistant for bill inquiries, meter readings, and customer support — available 24/7.
         </p>
 
         <div class="hero-buttons">
-          <a href="login.html" class="btn-primary">🚀 Get Started</a>
-          <a href="#" class="btn-outline" onclick="openModal()">📱 View Demo</a>
+          <a href="javscript:void(0)" class="btn primary">🎤 Try Voice Demo</a>
+          <a href="contact.html" class="btn secondary">📞 Contact Sales</a>
         </div>
       </div>
 
       <!-- Right Image -->
       <div class="hero-image">
-        <img src="assets/images/home-banner.png" alt="App Preview">
+        <img src="assets/images/voice-ui.png" alt="Voice UI">
       </div>
 
     </div>
   </section>
 
-
-  <!-- features -->
-  <section class="highlights">
-    <div class="section-header">
-      <h2>Powerful Features for Field Teams</h2>
-      <p>Everything you need to manage tasks, track teams, and improve productivity in real-time</p>
-    </div>
-    <div class="container highlights-container">
-
-      <div class="highlight-card">
-        <div class="icon">📍</div>
-        <h3>Real-time GPS Tracking</h3>
-      </div>
-
-      <div class="highlight-card">
-        <div class="icon">📋</div>
-        <h3>Smart Task Assignment</h3>
-      </div>
-
-      <div class="highlight-card">
-        <div class="icon">📸</div>
-        <h3>Photo & Signature Capture</h3>
-      </div>
-
-      <div class="highlight-card">
-        <div class="icon">📊</div>
-        <h3>Live Reporting Dashboard</h3>
-      </div>
-
-    </div>
-  </section>
 
   <!-- Features -->
-  <section class="features" id="features">
-    <div class="section-header">
-      <h2>Advanced Features Built for Efficiency</h2>
-      <p>Streamline operations, empower your field team, and gain complete visibility</p>
-    </div>
-    <div class="container">
+  <section class="features-combo" id="features">
 
-      <!-- Section Heading -->
+    <h2>What You Can Do with VoiceServe</h2>
 
-      <div class="feature-card">
-        <!-- Feature 1 -->
-        <div class="feature-row">
-          <div class="feature-text">
-            <h3>Task Management</h3>
-            <p>
-              Assign tasks with priority, SLA, and deadlines to field teams.
-            </p>
-          </div>
-          <div class="feature-image">
-            <img src="assets/images/taskmange.png" alt="Task Management">
-          </div>
+    <div class="combo-container">
+
+      <!-- LEFT: Timeline -->
+      <div class="timeline">
+
+        <div class="step">
+          <span>💳</span>
+          <p>Check Bills Instantly</p>
         </div>
 
-        <!-- Feature 2 -->
-        <div class="feature-row reverse">
-          <div class="feature-text">
-            <h3>Technician Mobile App</h3>
-            <ul>
-              <li>Daily task list</li>
-              <li>Checklist-based workflows</li>
-              <li>Upload photos & capture signatures</li>
-            </ul>
-          </div>
-          <div class="feature-image">
-            <img src="assets/images/mobile-app.png" alt="Mobile App" style="width: 200px;">
-          </div>
+        <div class="step">
+          <span>📅</span>
+          <p>Due Date Reminders</p>
         </div>
 
-        <!-- Feature 3 -->
-        <div class="feature-row">
-          <div class="feature-text">
-            <h3>GPS Tracking</h3>
-            <p>
-              Track technician movement with live location and check-in/out logs.
-            </p>
-          </div>
-          <div class="feature-image">
-            <img src="assets/images/gps.png" alt="GPS Tracking">
-          </div>
+        <div class="step">
+          <span>📊</span>
+          <p>Submit Meter Readings</p>
         </div>
 
-        <!-- Feature 4 -->
-        <div class="feature-row reverse">
-          <div class="feature-text">
-            <h3>Reporting Dashboard</h3>
-            <p>
-              Monitor performance with real-time KPIs and insights.
-            </p>
-          </div>
-          <div class="feature-image">
-            <img src="assets/images/report.png" alt="Reporting">
-          </div>
+        <div class="step">
+          <span>🚨</span>
+          <p>Outage Updates</p>
         </div>
 
       </div>
+
+      <!-- RIGHT: Chat UI -->
+      <div class="chat-ui">
+
+        <div class="msg user">💳 What’s my current bill?</div>
+        <div class="msg bot">Your current bill is ₹1,240</div>
+
+        <div class="msg user">📅 When is my due date?</div>
+        <div class="msg bot">Your due date is 25 March</div>
+
+        <div class="msg user">📊 Submit meter reading</div>
+        <div class="msg bot">Reading recorded successfully</div>
+
+        <div class="msg user">🚨 Any outage updates?</div>
+        <div class="msg bot">No outages in your area</div>
+
+      </div>
+
     </div>
 
   </section>
 
+  <!-- product section -->
+  <section class="experience" id="voice-assistant"> 
+
+    <div class="exp-container">
+
+      <!-- LEFT: Image + Wave -->
+      <div class="exp-image fade-left">
+        <div class="wave-circle"></div>
+
+        <img src="assets/images/voice-ui.png" alt="Voice UI">
+
+        <!-- Floating Tags -->
+        <div class="tag tag1">🎤 Listening...</div>
+        <div class="tag tag2">📝 Transcribing...</div>
+        <div class="tag tag3">✅ Response Ready</div>
+      </div>
+
+      <!-- RIGHT: Content -->
+      <div class="exp-content fade-right">
+        <h2>Seamless Voice Experience</h2>
+
+        <!-- Typing Text -->
+        <p class="subtitle">
+          <span id="typing-text"></span>
+        </p>
+
+        <ul class="exp-list">
+          <li>💬 Talk naturally with the system</li>
+          <li>⚡ Real-time transcription</li>
+          <li>📱 Works on mobile & smart speakers</li>
+        </ul>
+
+        <a href="#" class="btn primary">Explore Demo</a>
+      </div>
+
+    </div>
+
+  </section>
   <!-- How it works -->
-  <section class="how-it-works">
+  <section class="flow">
 
-    <div class="container">
+    <h2>How VoiceServe Works</h2>
 
-      <!-- Heading -->
-      <div class="section-header dark">
-        <h2>How It Works</h2>
-        <p>Simple workflow to manage your field operations efficiently</p>
+    <div class="flow-container">
+
+      <!-- Step 1 -->
+      <div class="flow-step fade-up">
+        <div class="circle">🎤</div>
+        <p>User speaks command</p>
       </div>
 
-      <!-- Steps -->
-      <div class="steps">
+      <div class="arrow">➝</div>
 
-        <!-- Step 1 -->
-        <div class="step-card">
-          <div class="step-number">01</div>
-          <h3>Assign Tasks</h3>
-          <p>Dispatcher assigns tasks with SLA & priority</p>
-        </div>
-
-        <!-- Step 2 -->
-        <div class="step-card">
-          <div class="step-number">02</div>
-          <h3>Execute in Field</h3>
-          <p>Technicians complete tasks with checklist, photos & signatures</p>
-        </div>
-
-        <!-- Step 3 -->
-        <div class="step-card">
-          <div class="step-number">03</div>
-          <h3>Track & Analyze</h3>
-          <p>Managers monitor progress and performance in real-time</p>
-        </div>
-
+      <!-- Step 2 -->
+      <div class="flow-step fade-up">
+        <div class="circle">🧠</div>
+        <p>NLP processes request</p>
       </div>
 
-    </div>
+      <div class="arrow">➝</div>
 
-  </section>
-
-  <!-- Dashboard -->
-  <section class="screens" id="dashboard">
-
-    <div class="container dashboard-container">
-
-      <!-- Heading -->
-      <div class="section-header dark">
-        <h2>Product Screens</h2>
-        <p>Explore how FieldForce works across web and mobile</p>
+      <!-- Step 3 -->
+      <div class="flow-step fade-up">
+        <div class="circle">🔗</div>
+        <p>Connects to Billing/CRM</p>
       </div>
 
-      <!-- Grid -->
-      <div class="screens-grid">
+      <div class="arrow">➝</div>
 
-        <div class="screen-card">
-          <img src="assets/images/Web-Dashboard.png" alt="">
-          <h4>Dispatcher Web Dashboard</h4>
-        </div>
-
-        <div class="screen-card">
-          <img src="assets/images/mobile-app.png" alt="" style="object-fit: contain;">
-          <h4>Technician App Home</h4>
-        </div>
-
-        <div class="screen-card">
-          <img src="assets/images/Task.png" alt="">
-          <h4>Task Detail Screen</h4>
-        </div>
-
-        <div class="screen-card">
-          <img src="assets/images/map.png" alt="">
-          <h4>Map & Route Screen</h4>
-        </div>
-
-        <div class="screen-card">
-          <img src="assets/images/report.png" alt="">
-          <h4>Reporting Dashboard</h4>
-        </div>
-
-        <div class="screen-card">
-          <img src="assets/images/team.png" alt="">
-          <h4>Team Collaboration</h4>
-        </div>
-
+      <!-- Step 4 -->
+      <div class="flow-step fade-up">
+        <div class="circle">🔊</div>
+        <p>Voice response returned</p>
       </div>
 
     </div>
 
   </section>
 
+  <!-- security -->
+  <section class="security" id="security">
 
-  <!-- Stats -->
-  <section class="impact">
+    <div class="security-container">
 
-    <div class="container">
+      <!-- LEFT: Content -->
+      <div class="security-content fade-left">
+        <h2>Secure & Reliable</h2>
 
-      <!-- Heading -->
-      <div class="section-header dark">
-        <h2>Real Results That Matter</h2>
-        <p>See how FieldForce improves efficiency and performance across teams</p>
-      </div>
+        <p class="subtitle">
+          Your data is protected with enterprise-grade security and privacy controls.
+        </p>
 
-      <!-- Stats -->
-      <div class="impact-grid">
+        <div class="security-points">
+          <div class="point">
+            <span>🔗</span>
+            <p>Secure account linking</p>
+          </div>
 
-        <div class="impact-card">
-          <div class="icon">✅</div>
-          <h3>40%</h3>
-          <p>Fewer missed tasks</p>
-        </div>
+          <div class="point">
+            <span>🔐</span>
+            <p>PIN / OTP verification</p>
+          </div>
 
-        <div class="impact-card">
-          <div class="icon">⏱️</div>
-          <h3>30%</h3>
-          <p>Faster job completion</p>
-        </div>
-
-        <div class="impact-card">
-          <div class="icon">📈</div>
-          <h3>+25%</h3>
-          <p>Improved SLA compliance</p>
-        </div>
-
-        <div class="impact-card">
-          <div class="icon">👁️</div>
-          <h3>100%</h3>
-          <p>Operational visibility</p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- testimonials -->
-  <section class="testimonials">
-
-    <div class="container">
-
-      <!-- Heading -->
-      <div class="section-header dark">
-        <h2>What Our Clients Say</h2>
-        <p>Trusted by teams to improve field operations and productivity</p>
-      </div>
-
-      <!-- Testimonials Grid -->
-      <div class="testimonials-grid">
-
-        <!-- Testimonial 1 -->
-        <div class="testimonial-card">
-          <p>
-            “FieldForce transformed how we manage field operations. Productivity increased drastically.”
-          </p>
-          <div class="testimonial-user">
-            <div class="avatar">J</div>
-            <div>
-              <h4>John</h4>
-              <span>Operations Manager</span>
-            </div>
+          <div class="point">
+            <span>🛡️</span>
+            <p>Safe data handling</p>
           </div>
         </div>
+      </div>
 
-        <!-- Testimonial 2 -->
-        <div class="testimonial-card">
-          <p>
-            “Real-time tracking and task assignment made our team more efficient than ever before.”
-          </p>
-          <div class="testimonial-user">
-            <div class="avatar">L</div>
-            <div>
-              <h4>Luna</h4>
-              <span>Field Supervisor</span>
-            </div>
-          </div>
+      <!-- RIGHT: Illustration -->
+      <div class="security-visual fade-right">
+        <div class="shield">
+          🛡️
+          <div class="pulse"></div>
         </div>
-
-        <!-- Testimonial 3 -->
-        <div class="testimonial-card">
-          <p>
-            “The reporting dashboard gives us complete visibility and helps improve SLA performance.”
-          </p>
-          <div class="testimonial-user">
-            <div class="avatar">H</div>
-            <div>
-              <h4>Harry</h4>
-              <span>Project Manager</span>
-            </div>
-          </div>
-        </div>
-
       </div>
 
     </div>
 
   </section>
+
+  <!-- use cases -->
+  <section class="usecases" id="usecase">
+
+    <h2>Built for Real Utility Needs</h2>
+
+    <div class="usecase-container">
+
+      <div class="usecase-item">
+        <div class="icon">💡</div>
+        <h3>Billing Queries</h3>
+        <p>Check bills, due dates, and payment status instantly.</p>
+      </div>
+
+      <div class="usecase-item">
+        <div class="icon">📈</div>
+        <h3>Meter Readings</h3>
+        <p>Submit readings quickly using voice input.</p>
+      </div>
+
+      <div class="usecase-item">
+        <div class="icon">⚡</div>
+        <h3>Outage Alerts</h3>
+        <p>Get real-time updates on service interruptions.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- value propostion -->
+  <section class="value">
+
+    <div class="value-container fade-up">
+
+      <h2>
+        Reduce Call Center Load <span>by 40%</span>
+      </h2>
+
+      <p class="subtitle">
+        Automate customer interactions with AI-powered voice support and deliver faster, smarter service.
+      </p>
+
+      <!-- Highlights -->
+      <div class="value-points">
+        <div class="point">⚡ 24/7 automated support</div>
+        <div class="point">🚀 Faster customer response</div>
+      </div>
+
+      <!-- CTA -->
+      <div class="value-buttons">
+        <a href="login.html" class="btn primary">Start Demo</a>
+        <a href="contact.html" class="btn secondary">Contact Sales</a>
+      </div>
+
+    </div>
+
+  </section>
+
 
 
   <!-- Footer -->
@@ -381,56 +314,48 @@
 
     <div class="footer-container">
 
-      <!-- Product -->
+      <!-- LEFT -->
       <div class="footer-col">
-        <h3>Product</h3>
+        <a href="" class="logo"><img src="assets/images/logo.png" alt=""
+            style="width: 200px; margin-bottom: 20px; border-radius: 10px;"></a>
+        <p>Smart voice assistant for utility providers</p>
+      </div>
+
+      <!-- LINKS -->
+      <div class="footer-col">
+        <h3 style="margin-bottom: 10px;">Links</h3>
         <ul>
+          <li><a href="/">Home</a></li>
           <li><a href="#features">Features</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-        </ul>
-      </div>
-
-      <!-- Company -->
-      <div class="footer-col">
-        <h3>Company</h3>
-        <ul>
-          <li><a href="#dashboard">Dashboard</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 3 -->
-      <div class="footer-col">
-        <h3>Support</h3>
-        <ul>
-          <li><a href="contact.html">Help Center</a></li>
+          <li><a href="#usecase">Use Cases</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <!-- <li><a href="#">Privacy Policy</a></li> -->
         </ul>
       </div>
 
-      <!-- Column 4 -->
+      <!-- PRODUCT -->
       <div class="footer-col">
-        <h3>Contact</h3>
-        <ul class="contact-info" style="background: none; display: inherit; padding: inherit;">
-          <li>Email: support@fieldforce.com</li>
-          <li>Phone: +91 98765 43210</li>
-          <li>Address: India</li>
+        <h3 style="margin-bottom: 10px;">Product</h3>
+        <ul>
+          <li><a href="#voice-assistant">Voice Assistant</a></li>
+          <!-- <li><a href="#">Integrations</a></li> -->
+          <li><a href="#security">Security</a></li>
         </ul>
-
       </div>
 
-      <!-- Social -->
-      <div class="social-links">
-        <a href="#">LinkedIn</a>
-        <a href="#">Twitter</a>
-        <a href="#">Facebook</a>
+      <!-- CONTACT -->
+      <div class="footer-col">
+        <h3 style="margin-bottom: 10px;">Contact</h3>
+        <ul>
+          <li>Email: support@voiceserve.com</li>
+          <li>Phone: +91 XXXXX XXXXX</li>
+        </ul>
       </div>
 
     </div>
 
     <!-- Bottom -->
     <div class="footer-bottom">
-      <p>© 2026 fieldforce. All rights reserved.</p>
+      <p>© 2026 VoiceServe. All rights reserved.</p>
     </div>
 
   </footer>
@@ -506,6 +431,66 @@
     toggle.addEventListener("click", () => {
       nav.classList.toggle("active");
     });
+
+
+    const text = "Talk naturally with the system and get instant responses powered by AI.";
+    let index = 0;
+
+    function typeEffect() {
+      if (index < text.length) {
+        document.getElementById("typing-text").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 30);
+      }
+    }
+    typeEffect();
+
+
+    // 👀 Scroll Reveal
+    const elements = document.querySelectorAll(".fade-left, .fade-right");
+
+    function revealOnScroll() {
+      elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (top < windowHeight - 100) {
+          el.classList.add("show");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+
+    const flowItems = document.querySelectorAll(".fade-up");
+
+    function revealFlow() {
+      flowItems.forEach(item => {
+        const top = item.getBoundingClientRect().top;
+        const height = window.innerHeight;
+
+        if (top < height - 100) {
+          item.classList.add("show");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealFlow);
+
+    const secItems = document.querySelectorAll(".fade-left, .fade-right");
+
+    function revealSecurity() {
+      secItems.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        const height = window.innerHeight;
+
+        if (top < height - 100) {
+          el.classList.add("show");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealSecurity);
   </script>
   <!-- <script src="script.js"></script> -->
 </body>
