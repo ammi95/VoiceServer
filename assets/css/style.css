@@ -416,12 +416,12 @@ body {
     }
 
     .timeline::before {
-        left: 50%;
-        transform: translateX(-50%);
+        left: 16px;
+        /* transform: translateX(-50%); */
     }
 
     .step {
-        justify-content: center;
+        /* justify-content: center; */
     }
 }
 
@@ -723,6 +723,7 @@ body {
     padding: 50px 40px;
     background: linear-gradient(135deg, #0F766E, #065F46);
     color: white;
+    overflow: hidden;
 }
 
 .security-container {
@@ -1502,6 +1503,9 @@ input:checked+.slider::before {
     .contact-info {
         grid-template-columns: repeat(2, 1fr);
     }
+    .contact-image {
+    width: 100%;
+}
 }
 
 @media (max-width: 500px) {
