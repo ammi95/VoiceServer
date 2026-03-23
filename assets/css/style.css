@@ -548,13 +548,13 @@ body {
     color: #0F766E;
     margin-bottom: 15px;
 }
-
-.subtitle {
+.exp-content .subtitle {
     font-size: 16px;
     color: #475569;
     margin-bottom: 25px;
     min-height: 40px;
 }
+
 
 /* Feature List */
 .exp-list {
