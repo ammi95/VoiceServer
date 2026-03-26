@@ -24,6 +24,7 @@ body {
     /* border-bottom: 1px solid rgba(255, 255, 255, 0.05); */
     z-index: 1000;
     transition: 0.3s ease;
+    overflow: hidden;
 }
 
 .navbar::before {
@@ -37,6 +38,7 @@ body {
     -webkit-transition: 700ms ease;
     -o-transition: 700ms ease;
     transition: 700ms ease;
+    pointer-events: none;
 }
 
 .navbar.header-fixed {
@@ -153,7 +155,8 @@ body {
     color: #fff;
 }
 
-.cta-buttons .btn-primary {
+.cta-buttons .btn-primary,
+.mobile-cta .btn-primary {
     /* background: linear-gradient(135deg, #065F46, #0F766E) !important; */
     border: none;
     color: #fff;
@@ -195,6 +198,21 @@ body {
     color: #fff;
     cursor: pointer;
 }
+.menu-toggle .btn-outline{
+    border: 1px solid #ffffff !important;
+    background: #065F46 !important;
+    color: #ffffff !important;
+    padding: 8px 16px !important;
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
 
 /* ================= MOBILE MENU ================= */
 .mobile-cta {
@@ -206,6 +224,9 @@ body {
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
+    .navbar{
+        overflow: inherit;
+    }
     .nav-links {
         position: absolute;
         top: 70px;
@@ -217,6 +238,8 @@ body {
         align-items: flex-start;
         padding: 25px;
         transition: 0.3s ease;
+        border-radius: 0;
+        /* display: none; */
     }
 
     .nav-links.active {
@@ -237,7 +260,7 @@ body {
     }
 
     .menu-toggle {
-        display: block;
+        display: flex;
     }
 }
 
@@ -511,6 +534,7 @@ body {
 .experience {
     padding: 50px 40px;
     background: #ffffff;
+    overflow: hidden;
 }
 
 .exp-container {
