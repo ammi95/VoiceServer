@@ -1441,9 +1441,9 @@ input:checked+.slider::before {
 .banner {
     background: linear-gradient(135deg, #0F766E, #14b8a6);
     color: white;
-    padding: 50px 20px;
+    padding: 120px 20px;
     text-align: center;
-    margin-top: 60px;
+    margin-top: -80px;
 }
 
 .banner h1 {

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/auth.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -15,10 +16,8 @@
     <!-- Navbar -->
     <header class="navbar">
         <div class="container">
-
             <!-- Logo -->
             <div class="logo"><a href="/"><img src="assets/images/logo.png" alt="" style="width: 200px;"></a></div>
-
             <!-- Menu -->
             <nav class="nav-links" id="navLinks">
                 <a href="/">Home</a>
@@ -27,16 +26,15 @@
                 <a href="contact.html">Contact</a>
 
                 <div class="mobile-cta">
-                    <button class="btn-outline">Login</button>
+                    <a href="login.html" class="btn-outline">Login</a>
                     <a href="javascript:void(0)" class="btn-primary" onclick="openModal()">Try Demo</a>
                 </div>
+                <div class="cta-buttons">
+                    <a href="login.html" class="btn-outline"><i class="fa-solid fa-user"></i></a>
+                    <a href="javascript:void(0)" class="btn-primary" onclick="openModal()">Get Demo</a>
+                </div>
             </nav>
-
             <!-- CTA Buttons -->
-            <div class="cta-buttons">
-                <a href="login.html" class="btn-outline">Login</a>
-                <a href="javascript:void(0)" class="btn-primary" onclick="openModal()">Get Demo</a>
-            </div>
 
             <!-- Hamburger -->
             <div class="menu-toggle" id="menuToggle">
@@ -288,6 +286,16 @@
                 });
             });
         });
+        $(document).ready(function () {
+            $(window).on('scroll', function () {
+                var scroll = $(window).scrollTop();
+                if (scroll < 100) {
+                    $('.navbar').removeClass("header-fixed");
+                } else {
+                    $('.navbar').addClass("header-fixed");
+                }
+            });
+        })
     </script>
 
 </body>
